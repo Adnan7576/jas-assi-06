@@ -167,3 +167,29 @@
         </section>
 
     </div>
+
+    <!-- main section ends  -->
+      <!-- Footer -->
+    <footer class="bg-green-900 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 Green Earth. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Tree Details -->
+    <input type="checkbox" id="tree-modal" class="modal-toggle" />
+    <div class="modal">
+        <div class="modal-box relative">
+            <label for="tree-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+            <h3 id="modal-tree-name" class="text-2xl font-bold text-green-800 mb-3"></h3>
+            <img id="modal-tree-image" src="" alt="" class="w-full h-64 object-cover rounded-lg mb-3" />
+            <p id="modal-tree-desc" class="mb-2"></p>
+            <p><strong>Category:</strong> <span id="modal-tree-category"></span></p>
+            <p><strong>Price:</strong> ৳<span id="modal-tree-price"></span></p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
