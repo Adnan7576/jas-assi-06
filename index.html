@@ -50,3 +50,120 @@
         </div>
     </section>
     <!-- hero section ends  -->
+
+
+      <!-- main section starts   -->
+    <div class="bg-green-50">
+        <main class="container mx-auto px-6 py-6">
+            <div class="grid grid-cols-12 gap-6">
+
+                <!-- Left Sidebar: Categories -->
+                <aside class="col-span-12 md:col-span-3 bg-white shadow-md rounded-xl p-4">
+                    <h2 class="text-lg font-semibold mb-4">Categories</h2>
+                    <ul id="category-list" class="space-y-2">
+                        <li class="text-gray-500 text-sm">Loading...</li>
+                    </ul>
+                </aside>
+
+                <!-- Middle Section: Products -->
+                <section class="col-span-12 md:col-span-6">
+                    <h2 class="text-xl font-semibold mb-4">All Plants</h2>
+                    <div id="product-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                        <!-- Cards will be loaded dynamically -->
+                    </div>
+                </section>
+
+                <!-- Right Sidebar: Cart -->
+                <aside class="col-span-12 md:col-span-3 bg-white shadow-md rounded-xl p-4">
+                    <h2 class="text-lg font-semibold mb-4">Your Cart</h2>
+                    <div id="cart-items" class="space-y-3">
+                        <p class="text-gray-500 text-sm">No products added yet.</p>
+                    </div>
+                    <div class="mt-4 flex justify-between items-center border-t pt-4">
+                        <span class="text-lg font-bold">Total:</span>
+                        <span id="total-price" class="text-lg font-bold">0৳</span>
+                    </div>
+                </aside>
+
+            </div>
+        </main>
+
+        <!-- about section -->
+        <div>
+            <section class="py-10">
+                <div class="container mx-auto px-4 text-center">
+                    <h2 class="text-3xl font-bold mb-4">About Green Earth</h2>
+                </div>
+            </section>
+
+            <div class="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div class="flex justify-center">
+                    <img src="./assets/about.png" alt="About Green Earth" class="rounded-xl shadow-lg w-full md:w-4/5">
+                </div>
+
+                <div>
+                    <p class="text-gray-700 text-lg mb-4">
+                        Green Earth is a global tree plantation initiative dedicated to fighting climate change. Since
+                        our start, we’ve planted over <span class="font-semibold">500,000 trees worldwide</span>. By
+                        joining our campaign, you help restore forests, create habitats for wildlife, and combat global
+                        warming.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Restoration of natural habitats</li>
+                        <li>Improvement of air quality</li>
+                        <li>Support for local communities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- our impact section -->
+        <section class="bg-green-100 py-10">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-8">Our Impact</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-semibold mb-4 text-green-800">500K+</h3>
+                        <p class="text-gray-700">Trees Planted</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-semibold mb-4 text-green-800">120+</h3>
+                        <p class="text-gray-700">Volunteers Worldwide</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-semibold mb-4 text-green-800">c0+</h3>
+                        <p class="text-gray-700">Communities Supported</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- plant a tree section -->
+        <section class="bg-green-800 py-14">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold text-white mb-4">Plant a Tree Today</h2>
+                <div class="bg-green-600 shadow-2xl rounded-2xl p-8 max-w-md mx-auto">
+                    <form id="donation-form" class="flex flex-col gap-5">
+                        <input type="text" id="donor-name" placeholder="Your Name"
+                            class="input input-bordered w-full rounded-lg border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" />
+                        <input type="email" id="donor-email" placeholder="Your Email Address"
+                            class="input input-bordered w-full rounded-lg border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" />
+                        <select id="tree-count" name="tree-count"
+                            class="select select-bordered w-full rounded-lg border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
+                            <option disabled selected>Number of Trees</option>
+                            <option value="1">1 Tree</option>
+                            <option value="2">2 Trees</option>
+                            <option value="3">3 Trees</option>
+                            <option value="4">4 Trees</option>
+                            <option value="5">5 Trees</option>
+                        </select>
+                        <button type="submit"
+                            class="bg-yellow-500 hover:bg-green-700 text-green-600 font-bold py-3 rounded-lg shadow-lg transition duration-300">
+                            Donate Now
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </div>
